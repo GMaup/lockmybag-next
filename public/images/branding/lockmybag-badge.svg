@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">LockMyBag Badge</title>
+  <desc id="desc">A rounded badge with a padlock and bag monogram for LockMyBag</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+    <linearGradient id="lock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded gradient background -->
+  <rect x="8" y="8" width="240" height="240" rx="36" fill="url(#bg)"/>
+
+  <!-- Subtle inner highlight -->
+  <rect x="12" y="12" width="232" height="232" rx="32" fill="white" opacity="0.06"/>
+
+  <!-- Bag + Lock mark -->
+  <g filter="url(#shadow)" transform="translate(64,52)">
+    <!-- Bag body -->
+    <rect x="0" y="48" width="128" height="92" rx="16" fill="url(#lock)"/>
+    <!-- Bag flap -->
+    <rect x="0" y="48" width="128" height="22" rx="10" fill="#1F2937" opacity="0.08"/>
+    <!-- Handle (U shape) -->
+    <path d="M32,52 C32,28 48,12 64,12 C80,12 96,28 96,52" stroke="#F8FAFC" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <!-- Keyhole -->
+    <circle cx="64" cy="98" r="10" fill="#1E293B"/>
+    <rect x="60" y="98" width="8" height="18" rx="4" fill="#1E293B"/>
+  </g>
+
+  <!-- Monogram LMB -->
+  <g transform="translate(20,200)">
+    <rect x="0" y="0" width="84" height="36" rx="10" fill="rgba(15,23,42,0.25)"/>
+    <text x="12" y="24" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="18" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">
+      LMB
+    </text>
+  </g>
+</svg>

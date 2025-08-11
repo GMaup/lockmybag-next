@@ -6,7 +6,7 @@ const Nantes = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <div className="bg-green-100 rounded-2xl p-4">
+            <div className="bg-surface-secondary rounded-2xl p-4">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.8!2d-1.5419!3d47.2173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDEzJzAyLjMiTiAxwrAzMiczMC4xIlc!5e0!3m2!1sfr!2sfr!4v1234567890"
                 width="100%"
@@ -21,20 +21,20 @@ const Nantes = () => {
           </div>
           
           <div className="order-1 lg:order-2">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
               📍 Nantes - Gare SNCF
             </h2>
-            <div className="space-y-4 text-gray-600">
+            <div className="space-y-4 text-secondary">
               <p className="text-lg">
                 Notre consigne à Nantes est située à proximité immédiate de la gare SNCF, 
                 parfait pour les voyageurs en transit ou pour explorer la ville les mains libres.
               </p>
               
               <div className="bg-white rounded-lg p-6 shadow-md border">
-                <h3 className="font-bold text-xl mb-4 text-gray-800">Informations pratiques</h3>
+                <h3 className="font-bold text-xl mb-4 text-primary">Informations pratiques</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <span className="text-green-600 mr-2">📍</span>
+                    <span className="text-brand-secondary mr-2">📍</span>
                     <div>
                       <strong>Adresse :</strong><br />
                       5 Boulevard de Stalingrad<br />
@@ -42,7 +42,7 @@ const Nantes = () => {
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-green-600 mr-2">🚊</span>
+                    <span className="text-brand-secondary mr-2">🚊</span>
                     <div>
                       <strong>Transports :</strong><br />
                       Tramway : Ligne 1 - Gare SNCF (1 min)<br />
@@ -50,14 +50,14 @@ const Nantes = () => {
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-green-600 mr-2">🕐</span>
+                    <span className="text-brand-secondary mr-2">🕐</span>
                     <div>
                       <strong>Horaires :</strong><br />
                       Lundi - Dimanche : 8h00 - 22h00
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-green-600 mr-2">📞</span>
+                    <span className="text-brand-secondary mr-2">📞</span>
                     <div>
                       <strong>Contact local :</strong><br />
                       06 XX XX XX XX
@@ -67,7 +67,7 @@ const Nantes = () => {
               </div>
               
               <div className="mt-6">
-                <h3 className="font-bold text-xl mb-3 text-gray-800">À proximité</h3>
+                <h3 className="font-bold text-xl mb-3 text-primary">À proximité</h3>
                 <ul className="grid grid-cols-2 gap-2 text-sm">
                   <li>• Gare SNCF (2 min)</li>
                   <li>• Château des Ducs (10 min)</li>

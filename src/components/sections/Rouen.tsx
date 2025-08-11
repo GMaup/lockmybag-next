@@ -2,24 +2,24 @@ import Button from '../ui/Button';
 
 const Rouen = () => {
   return (
-    <section id="rouen" className="scroll-mt-28 py-16 bg-gray-50">
+    <section id="rouen" className="scroll-mt-28 py-16 bg-surface-light">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
               📍 Rouen - Centre Ville
             </h2>
-            <div className="space-y-4 text-gray-600">
+            <div className="space-y-4 text-secondary">
               <p className="text-lg">
                 Notre point de consigne à Rouen est idéalement situé en plein cœur du centre historique, 
                 à seulement 5 minutes à pied de la Cathédrale Notre-Dame.
               </p>
               
               <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="font-bold text-xl mb-4 text-gray-800">Informations pratiques</h3>
+                <h3 className="font-bold text-xl mb-4 text-primary">Informations pratiques</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <span className="text-blue-600 mr-2">📍</span>
+                    <span className="text-brand-primary mr-2">📍</span>
                     <div>
                       <strong>Adresse :</strong><br />
                       15 Rue du Gros-Horloge<br />
@@ -27,7 +27,7 @@ const Rouen = () => {
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-600 mr-2">🚇</span>
+                    <span className="text-brand-primary mr-2">🚇</span>
                     <div>
                       <strong>Transports :</strong><br />
                       Métro : Station Palais de Justice (2 min)<br />
@@ -35,14 +35,14 @@ const Rouen = () => {
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-600 mr-2">🕐</span>
+                    <span className="text-brand-primary mr-2">🕐</span>
                     <div>
                       <strong>Horaires :</strong><br />
                       Lundi - Dimanche : 8h00 - 22h00
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-600 mr-2">📞</span>
+                    <span className="text-brand-primary mr-2">📞</span>
                     <div>
                       <strong>Contact local :</strong><br />
                       06 XX XX XX XX
@@ -52,7 +52,7 @@ const Rouen = () => {
               </div>
               
               <div className="mt-6">
-                <h3 className="font-bold text-xl mb-3 text-gray-800">À proximité</h3>
+                <h3 className="font-bold text-xl mb-3 text-primary">À proximité</h3>
                 <ul className="grid grid-cols-2 gap-2 text-sm">
                   <li>• Cathédrale Notre-Dame (5 min)</li>
                   <li>• Gros-Horloge (1 min)</li>
@@ -68,7 +68,7 @@ const Rouen = () => {
           </div>
           
           <div className="relative">
-            <div className="bg-blue-100 rounded-2xl p-4">
+            <div className="bg-surface-primary rounded-2xl p-4">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.3674837266!2d1.0909!3d49.4432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDI2JzM1LjUiTiAxwrAwNSczMi44IkU!5e0!3m2!1sfr!2sfr!4v1234567890"
                 width="100%"

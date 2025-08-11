@@ -35,7 +35,7 @@ const Header = () => {
             height={70}
             className="rounded"
           />
-          <span className="text-2xl font-bold text-blue-600">LockMyBag</span>
+          <span className="text-2xl font-bold text-brand-primary">LockMyBag</span>
         </Link>
         
         {/* Desktop Menu */}

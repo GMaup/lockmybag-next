@@ -37,10 +37,10 @@ const Pricing = () => {
       <div className="container mx-auto px-4">
 
       <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Tarifs
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-secondary max-w-2xl mx-auto">
           Nos tarifs simples et transparents
           </p>
         </div>
@@ -49,7 +49,7 @@ const Pricing = () => {
           {pricingItems.map((item) => (
             <Card key={item.key} className="h-full">
               <div className="flex flex-col items-center text-center p-4">
-                <div className="w-full aspect-square overflow-hidden rounded-lg bg-gray-50 mb-4">
+                <div className="w-full aspect-square overflow-hidden rounded-lg bg-surface mb-4">
                   <Image
                     src={item.img}
                     alt={item.alt}
@@ -60,9 +60,9 @@ const Pricing = () => {
                 </div>
                 <div className="menu-description">
                   <h3 className="heading-style-h3 text-2xl font-bold mb-1">{item.title}</h3>
-                  <div className="text-gray-700">{item.desc}</div>
+                  <div className="text-secondary">{item.desc}</div>
                 </div>
-                <div className="price-tag mt-4 text-blue-600 font-semibold">
+                <div className="price-tag mt-4 text-brand-primary font-semibold">
                   {item.priceHour}<br />{item.priceDay}
                 </div>
               </div>

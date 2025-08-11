@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const AboutUs = () => {
   const stats = [
     { number: "10K+", label: "Bagages stockés" },
@@ -28,13 +30,13 @@ const AboutUs = () => {
   ];
 
   return (
-    <section id="about-us" className="scroll-mt-28 py-16 bg-gray-50">
+    <section id="about-us" className="scroll-mt-28 py-16 bg-surface-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             À Propos de LockMyBag
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-secondary max-w-3xl mx-auto">
             Depuis 2025, nous facilitons vos déplacements en vous libérant de vos bagages. 
             Notre mission : vous permettre de profiter pleinement de votre journée.
           </p>
@@ -44,8 +46,8 @@ const AboutUs = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">{stat.number}</div>
-              <div className="text-gray-600">{stat.label}</div>
+              <div className="text-4xl font-bold text-brand-primary mb-2">{stat.number}</div>
+              <div className="text-secondary">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -90,7 +92,15 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="bg-gradient-to-br from-blue-100 to-green-100 rounded-2xl p-8 text-center">
-              <div className="text-6xl mb-4">🎒</div>
+              <div className="mb-4 flex justify-center">
+                <Image
+                  src="/images/branding/lockmybag-badge.svg"
+                  alt="Logo LockMyBag"
+                  width={96}
+                  height={96}
+                  className="h-24 w-24 drop-shadow-md"
+                />
+              </div>
               <h4 className="text-2xl font-bold mb-2 text-gray-900">Notre Engagement</h4>
               <p className="text-gray-700">
                 Vous offrir la liberté de découvrir et profiter de chaque instant, 

@@ -3,6 +3,23 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* LockMyBag Brand Colors - Simple & Cohérent */
+  --primary: #2563eb;        /* Bleu principal */
+  --primary-hover: #1d4ed8;  /* Bleu foncé au hover */
+  --secondary: #16a34a;      /* Vert pour accents */
+  --secondary-hover: #15803d;
+  
+  /* Surfaces & Backgrounds */
+  --surface-light: #f9fafb;  /* Gris très clair */
+  --surface: #f3f4f6;        /* Gris clair */
+  --surface-primary: #eff6ff; /* Bleu très clair */
+  --surface-secondary: #f0fdf4; /* Vert très clair */
+  
+  /* Text Colors */
+  --text-primary: #111827;   /* Noir principal */
+  --text-secondary: #4b5563; /* Gris moyen */
+  --text-muted: #6b7280;     /* Gris clair */
 }
 
 @theme inline {
@@ -24,3 +41,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Brand Color Utilities */
+.text-brand-primary { color: var(--primary); }
+.text-brand-secondary { color: var(--secondary); }
+.bg-brand-primary { background-color: var(--primary); }
+.bg-brand-secondary { background-color: var(--secondary); }
+.bg-surface-light { background-color: var(--surface-light); }
+.bg-surface { background-color: var(--surface); }
+.bg-surface-primary { background-color: var(--surface-primary); }
+.bg-surface-secondary { background-color: var(--surface-secondary); }
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted { color: var(--text-muted); }
+
+/* Hover States */
+.hover\:bg-brand-primary-hover:hover { background-color: var(--primary-hover); }
+.hover\:bg-brand-secondary-hover:hover { background-color: var(--secondary-hover); }

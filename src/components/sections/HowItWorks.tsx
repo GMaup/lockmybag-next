@@ -27,13 +27,13 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section id="howitworks" className="scroll-mt-28 py-16 bg-gray-50">
+    <section id="howitworks" className="scroll-mt-28 py-16 bg-surface-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Comment ça marche ?
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-secondary max-w-2xl mx-auto">
             Un processus simple et rapide en 4 étapes
           </p>
         </div>
@@ -56,16 +56,16 @@ const HowItWorks = () => {
               )}
               
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-600 text-white rounded-full text-3xl font-bold mb-4">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-brand-primary text-white rounded-full text-3xl font-bold mb-4">
                   <span className="text-4xl">{step.icon}</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-800">
+                <h3 className="text-xl font-bold mb-2 text-primary">
                   Étape {step.number}
                 </h3>
-                <h4 className="text-lg font-semibold mb-2 text-blue-600">
+                <h4 className="text-lg font-semibold mb-2 text-brand-primary">
                   {step.title}
                 </h4>
-                <p className="text-gray-600">
+                <p className="text-secondary">
                   {step.description}
                 </p>
               </div>
@@ -73,9 +73,9 @@ const HowItWorks = () => {
           ))}
         </div>
         
-        <div className="mt-12 bg-blue-50 rounded-2xl p-8">
+        <div className="mt-12 bg-surface-primary rounded-2xl p-8">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4 text-gray-900">
+            <h3 className="text-2xl font-bold mb-4 text-primary">
               💡 Bon à savoir
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left max-w-4xl mx-auto">
@@ -83,7 +83,7 @@ const HowItWorks = () => {
                 <span className="text-2xl mr-3">🔒</span>
                 <div>
                   <strong>Sécurité maximale</strong>
-                  <p className="text-sm text-gray-600 mt-1">
+                  <p className="text-sm text-secondary mt-1">
                     Espace surveillé 24/7 avec caméras et alarme
                   </p>
                 </div>
@@ -92,7 +92,7 @@ const HowItWorks = () => {
                 <span className="text-2xl mr-3">📏</span>
                 <div>
                   <strong>Toutes tailles</strong>
-                  <p className="text-sm text-gray-600 mt-1">
+                  <p className="text-sm text-secondary mt-1">
                     Sacs à dos, valises, équipements sportifs acceptés
                   </p>
                 </div>
@@ -101,7 +101,7 @@ const HowItWorks = () => {
                 <span className="text-2xl mr-3">🎫</span>
                 <div>
                   <strong>Sans impression</strong>
-                  <p className="text-sm text-gray-600 mt-1">
+                  <p className="text-sm text-secondary mt-1">
                     Confirmation sur smartphone suffisante
                   </p>
                 </div>

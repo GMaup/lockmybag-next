@@ -3,15 +3,15 @@ import Image from 'next/image';
 
 const Presentation = () => {
   return (
-    <section id="presentation" className="scroll-mt-28 pt-20 pb-16 bg-gradient-to-br from-blue-50 to-white">
+    <section id="presentation" className="scroll-mt-28 pt-20 pb-16 bg-gradient-to-br from-surface-primary to-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
               Consigne à bagages
-              <span className="text-blue-600"> sécurisée</span>
+              <span className="text-brand-primary"> sécurisée</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-secondary mb-8">
               Déposez vos bagages en toute sécurité à Rouen et Nantes. 
               Service disponible 7j/7 de 8h à 22h.
             </p>
@@ -27,7 +27,7 @@ const Presentation = () => {
           
           <div className="flex-1">
             <div className="relative">
-              <div className="absolute inset-0 bg-blue-200 rounded-full blur-3xl opacity-30"></div>
+              <div className="absolute inset-0 bg-surface-primary rounded-full blur-3xl opacity-30"></div>
               <Image 
                 src="/images/common/6a402d57-c8cb-4c8a-ad49-edfbea789e3e.webp" 
                 alt="Service de consigne à bagages"

@@ -44,10 +44,10 @@ const FAQ = () => {
     <section id="faq" className="scroll-mt-28 py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Questions Fréquentes
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-secondary max-w-2xl mx-auto">
             Tout ce que vous devez savoir sur notre service
           </p>
         </div>
@@ -60,11 +60,11 @@ const FAQ = () => {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
                 <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold text-gray-800 pr-8">
+                  <h3 className="text-lg font-semibold text-primary pr-8">
                     {faq.question}
                   </h3>
                   <svg
-                    className={`w-6 h-6 text-blue-600 transform transition-transform duration-200 ${
+                    className={`w-6 h-6 text-brand-primary transform transition-transform duration-200 ${
                       openIndex === index ? 'rotate-180' : ''
                     }`}
                     fill="none"
@@ -88,7 +88,7 @@ const FAQ = () => {
           <h3 className="text-2xl font-bold mb-4 text-gray-900">
             Une autre question ?
           </h3>
-          <p className="text-gray-600 mb-6">
+          <p className="text-secondary mt-4 pb-4">
             Notre équipe est là pour vous aider
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
