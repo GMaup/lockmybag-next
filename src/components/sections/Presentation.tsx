@@ -2,7 +2,7 @@ import Button from '../ui/Button';
 
 const Presentation = () => {
   return (
-    <section id="presentation" className="pt-20 pb-16 bg-gradient-to-br from-blue-50 to-white">
+    <section id="presentation" className="scroll-mt-28 pt-20 pb-16 bg-gradient-to-br from-blue-50 to-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left">
@@ -18,7 +18,7 @@ const Presentation = () => {
               <Button variant="primary" size="large" href="#pricing">
                 Réserver maintenant
               </Button>
-              <Button variant="outline" size="large" href="#how-it-works">
+              <Button variant="outline" size="large" href="#howitworks">
                 Comment ça marche ?
               </Button>
             </div>

@@ -11,7 +11,7 @@ const Header = () => {
     { name: 'Tarifs', href: '#pricing' },
     { name: 'Rouen', href: '#rouen' },
     { name: 'Nantes', href: '#nantes' },
-    { name: 'Fonctionnement', href: '#how-it-works' },
+    { name: 'Fonctionnement', href: '#howitworks' },
     { name: 'FAQ', href: '#faq' }
   ];
 

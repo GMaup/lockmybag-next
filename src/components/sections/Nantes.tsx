@@ -2,7 +2,7 @@ import Button from '../ui/Button';
 
 const Nantes = () => {
   return (
-    <section id="nantes" className="py-16 bg-white">
+    <section id="nantes" className="scroll-mt-28 py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
