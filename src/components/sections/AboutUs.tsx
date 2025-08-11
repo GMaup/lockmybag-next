@@ -57,14 +57,14 @@ const AboutUs = () => {
               <h3 className="text-2xl font-bold mb-6 text-gray-900">Notre Histoire</h3>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  LockMyBag est né d'un constat simple : il est difficile de profiter d'une ville 
-                  quand on est encombré de bagages. Que vous soyez touriste, voyageur d'affaires 
+                  LockMyBag est né d&apos;un constat simple : il est difficile de profiter d&apos;une ville 
+                  quand on est encombré de bagages. Que vous soyez touriste, voyageur d&apos;affaires 
                   ou simplement de passage, nous sommes là pour vous simplifier la vie.
                 </p>
                 <p>
                   Nous avons créé un service de consigne moderne, sécurisé et accessible, 
                   avec des emplacements stratégiques à Rouen et Nantes. Notre équipe passionnée 
-                  s'engage à offrir une expérience client exceptionnelle.
+                  s&apos;engage à offrir une expérience client exceptionnelle.
                 </p>
                 <div className="pt-4">
                   <h4 className="font-semibold text-lg mb-3 text-gray-800">Nos Valeurs</h4>
@@ -118,7 +118,7 @@ const AboutUs = () => {
                   </div>
                   <span className="ml-2 text-sm text-gray-500">{testimonial.location}</span>
                 </div>
-                <p className="text-gray-600 mb-4 italic">"{testimonial.comment}"</p>
+                <p className="text-gray-600 mb-4 italic">&ldquo;{testimonial.comment}&rdquo;</p>
                 <p className="font-semibold text-gray-800">- {testimonial.name}</p>
               </div>
             ))}

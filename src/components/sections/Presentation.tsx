@@ -1,4 +1,5 @@
 import Button from '../ui/Button';
+import Image from 'next/image';
 
 const Presentation = () => {
   return (
@@ -27,9 +28,11 @@ const Presentation = () => {
           <div className="flex-1">
             <div className="relative">
               <div className="absolute inset-0 bg-blue-200 rounded-full blur-3xl opacity-30"></div>
-              <img 
+              <Image 
                 src="/images/common/6a402d57-c8cb-4c8a-ad49-edfbea789e3e.webp" 
                 alt="Service de consigne à bagages"
+                width={500}
+                height={400}
                 className="relative rounded-2xl shadow-2xl w-full max-w-lg mx-auto"
               />
             </div>
