@@ -22,12 +22,7 @@
   --text-muted: #6b7280;     /* Gris clair */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Theme variables are already defined in :root above */
 
 @media (prefers-color-scheme: dark) {
   :root {
