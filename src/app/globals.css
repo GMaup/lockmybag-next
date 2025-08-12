@@ -3,54 +3,54 @@
 /* Tailwind v4 Design Tokens */
 @theme {
   /* Base */
-  --color-background: #ffffff;
-  --color-foreground: #111827;
+  --color-background: #FFFFFF;
+  --color-foreground: #0F172A;
 
   /* Neutral text and borders */
-  --color-secondary: #4b5563; /* secondary text */
-  --color-muted: #6b7280;     /* muted text */
-  --color-border: #e5e7eb;
+  --color-secondary: #475467; /* secondary text */
+  --color-muted: #667085;     /* muted text */
+  --color-border: #E7ECF2;
 
-  /* Brand: Primary (blue) */
-  --color-primary: #2563eb;
-  --color-primary-hover: #1d4ed8;
+  /* Brand: Primary (modern teal) */
+  --color-primary: #14B8A6;
+  --color-primary-hover: #0D9488;
   --color-primary-foreground: #ffffff;
-  --color-primary-soft: #eff6ff;
+  --color-primary-soft: #F0FDFA;
 
-  /* Brand: Accent (green) */
-  --color-accent: #16a34a;
-  --color-accent-hover: #15803d;
-  --color-accent-foreground: #ffffff;
-  --color-accent-soft: #f0fdf4;
+  /* Brand: Accent (saffron) */
+  --color-accent: #FDB022;
+  --color-accent-hover: #F59E0B;
+  --color-accent-foreground: #0B0A07;
+  --color-accent-soft: #FFFAEB;
 
   /* Surfaces */
-  --color-surface: #f9fafb;      /* light surface */
-  --color-surface-2: #f3f4f6;    /* hover/raised */
-  --color-surface-inverse: #111827; /* dark surface (footer, etc.) */
-  --color-foreground-inverse: #ffffff;
+  --color-surface: #F8FAFC;      /* light surface */
+  --color-surface-2: #EEF2F7;    /* hover/raised */
+  --color-surface-inverse: #0F172A; /* dark surface (footer, etc.) */
+  --color-foreground-inverse: #F8FAFC;
 
   /* Status */
-  --color-warning: #f59e0b;
+  --color-warning: #F59E0B;
 }
 
 /* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: #0a0a0a;
-    --color-foreground: #ededed;
+    --color-background: #070A0D;
+    --color-foreground: #E7ECF2;
 
-    --color-secondary: #d1d5db;
-    --color-muted: #9ca3af;
-    --color-border: #1f2937;
+    --color-secondary: #CBD5E1;
+    --color-muted: #94A3B8;
+    --color-border: #1A2435;
 
-    --color-surface: #111827;
-    --color-surface-2: #1f2937;
-    --color-surface-inverse: #f9fafb;
-    --color-foreground-inverse: #0a0a0a;
+    --color-surface: #0E1F24;
+    --color-surface-2: #10242B;
+    --color-surface-inverse: #F5FAF9;
+    --color-foreground-inverse: #070A0D;
 
     /* soften brand surfaces for dark */
-    --color-primary-soft: #0b1220;
-    --color-accent-soft: #0f1a12;
+    --color-primary-soft: #062A28;
+    --color-accent-soft: #241A06;
   }
 }
 
