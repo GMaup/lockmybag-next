@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-inverse text-inverse py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -14,12 +14,12 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Nos Villes</h4>
             <ul className="space-y-2 text-muted">
               <li>
-                <a href="#rouen" className="hover:text-white transition-colors">
+                <a href="#rouen" className="hover:text-inverse transition-colors">
                   Rouen - Centre-ville
                 </a>
               </li>
               <li>
-                <a href="#nantes" className="hover:text-white transition-colors">
+                <a href="#nantes" className="hover:text-inverse transition-colors">
                   Nantes - Gare SNCF
                 </a>
               </li>
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/20 mt-8 pt-8 text-center text-muted">
+        <div className="border-t border-inverse-soft mt-8 pt-8 text-center text-muted">
           <p>&copy; 2025 LockMyBag. Tous droits réservés.</p>
         </div>
       </div>

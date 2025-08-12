@@ -43,10 +43,10 @@ const HowItWorks = () => {
             <div key={index} className="relative">
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-1/4 left-full w-full">
-                  <svg className="w-full h-2" viewBox="0 0 100 10">
+                  <svg className="w-full h-2 text-border" viewBox="0 0 100 10">
                     <path
                       d="M 0 5 L 100 5"
-                      stroke="#CBD5E0"
+                      stroke="currentColor"
                       strokeWidth="2"
                       strokeDasharray="5,5"
                       fill="none"
@@ -56,7 +56,7 @@ const HowItWorks = () => {
               )}
               
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-brand-primary text-white rounded-full text-3xl font-bold mb-4">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-brand-primary text-brand-primary-foreground rounded-full text-3xl font-bold mb-4">
                   <span className="text-4xl">{step.icon}</span>
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-primary">

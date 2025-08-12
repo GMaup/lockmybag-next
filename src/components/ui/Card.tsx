@@ -9,7 +9,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, children, className = '', icon }) => {
   return (
-    <div className={`bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 ${className}`}>
+    <div className={`bg-background rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 ${className}`}>
       {icon && (
         <div className="mb-4 text-brand-primary">
           {icon}

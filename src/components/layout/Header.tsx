@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+    <header className="fixed top-0 left-0 right-0 bg-background shadow-md z-50">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2">
           <Image
@@ -45,7 +45,7 @@ const Header = () => {
               key={item.name}
               href={item.href}
               onClick={(e) => scrollToSection(e, item.href)}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+              className="text-secondary hover:text-brand-primary transition-colors duration-200 font-medium"
             >
               {item.name}
             </a>
@@ -68,14 +68,14 @@ const Header = () => {
         
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="absolute top-full left-0 right-0 bg-white shadow-lg md:hidden">
+          <div className="absolute top-full left-0 right-0 bg-background shadow-lg md:hidden">
             <div className="flex flex-col py-4">
               {menuItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
                   onClick={(e) => scrollToSection(e, item.href)}
-                  className="px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors"
+                  className="px-4 py-3 text-secondary hover:text-brand-primary hover:bg-surface-light transition-colors"
                 >
                   {item.name}
                 </a>

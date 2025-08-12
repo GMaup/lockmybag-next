@@ -15,7 +15,7 @@ const Rouen = () => {
                 à seulement 5 minutes à pied de la Cathédrale Notre-Dame.
               </p>
               
-              <div className="bg-white rounded-lg p-6 shadow-md">
+              <div className="bg-background rounded-lg p-6 shadow-md">
                 <h3 className="font-bold text-xl mb-4 text-primary">Informations pratiques</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">

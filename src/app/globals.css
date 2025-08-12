@@ -1,55 +1,109 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  
-  /* LockMyBag Brand Colors - Simple & Cohérent */
-  --primary: #2563eb;        /* Bleu principal */
-  --primary-hover: #1d4ed8;  /* Bleu foncé au hover */
-  --secondary: #16a34a;      /* Vert pour accents */
-  --secondary-hover: #15803d;
-  
-  /* Surfaces & Backgrounds */
-  --surface-light: #f9fafb;  /* Gris très clair */
-  --surface: #f3f4f6;        /* Gris clair */
-  --surface-primary: #eff6ff; /* Bleu très clair */
-  --surface-secondary: #f0fdf4; /* Vert très clair */
-  
-  /* Text Colors */
-  --text-primary: #111827;   /* Noir principal */
-  --text-secondary: #4b5563; /* Gris moyen */
-  --text-muted: #6b7280;     /* Gris clair */
+/* Tailwind v4 Design Tokens */
+@theme {
+  /* Base */
+  --color-background: #ffffff;
+  --color-foreground: #111827;
+
+  /* Neutral text and borders */
+  --color-secondary: #4b5563; /* secondary text */
+  --color-muted: #6b7280;     /* muted text */
+  --color-border: #e5e7eb;
+
+  /* Brand: Primary (blue) */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-foreground: #ffffff;
+  --color-primary-soft: #eff6ff;
+
+  /* Brand: Accent (green) */
+  --color-accent: #16a34a;
+  --color-accent-hover: #15803d;
+  --color-accent-foreground: #ffffff;
+  --color-accent-soft: #f0fdf4;
+
+  /* Surfaces */
+  --color-surface: #f9fafb;      /* light surface */
+  --color-surface-2: #f3f4f6;    /* hover/raised */
+  --color-surface-inverse: #111827; /* dark surface (footer, etc.) */
+  --color-foreground-inverse: #ffffff;
+
+  /* Status */
+  --color-warning: #f59e0b;
 }
 
-/* Theme variables are already defined in :root above */
-
+/* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
+
+    --color-secondary: #d1d5db;
+    --color-muted: #9ca3af;
+    --color-border: #1f2937;
+
+    --color-surface: #111827;
+    --color-surface-2: #1f2937;
+    --color-surface-inverse: #f9fafb;
+    --color-foreground-inverse: #0a0a0a;
+
+    /* soften brand surfaces for dark */
+    --color-primary-soft: #0b1220;
+    --color-accent-soft: #0f1a12;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
 }
 
-/* Brand Color Utilities */
-.text-brand-primary { color: var(--primary); }
-.text-brand-secondary { color: var(--secondary); }
-.bg-brand-primary { background-color: var(--primary); }
-.bg-brand-secondary { background-color: var(--secondary); }
-.bg-surface-light { background-color: var(--surface-light); }
-.bg-surface { background-color: var(--surface); }
-.bg-surface-primary { background-color: var(--surface-primary); }
-.bg-surface-secondary { background-color: var(--surface-secondary); }
-.text-primary { color: var(--text-primary); }
-.text-secondary { color: var(--text-secondary); }
-.text-muted { color: var(--text-muted); }
+/* Semantic utilities bound to tokens */
+.text-primary { color: var(--color-foreground); }
+.text-secondary { color: var(--color-secondary); }
+.text-muted { color: var(--color-muted); }
+.text-brand-primary { color: var(--color-primary); }
+.text-brand-secondary { color: var(--color-accent); }
+.text-brand-primary-foreground { color: var(--color-primary-foreground); }
+.text-brand-secondary-foreground { color: var(--color-accent-foreground); }
+.text-warning { color: var(--color-warning); }
+.text-border { color: var(--color-border); }
 
-/* Hover States */
-.hover\:bg-brand-primary-hover:hover { background-color: var(--primary-hover); }
-.hover\:bg-brand-secondary-hover:hover { background-color: var(--secondary-hover); }
+.bg-background { background-color: var(--color-background); }
+.bg-surface-light { background-color: var(--color-surface); }
+.bg-surface { background-color: var(--color-surface-2); }
+.bg-surface-primary { background-color: var(--color-primary-soft); }
+.bg-surface-secondary { background-color: var(--color-accent-soft); }
+.bg-brand-primary { background-color: var(--color-primary); }
+.bg-brand-secondary { background-color: var(--color-accent); }
+.hover\:bg-brand-primary-hover:hover { background-color: var(--color-primary-hover); }
+.hover\:bg-brand-secondary-hover:hover { background-color: var(--color-accent-hover); }
+.hover\:bg-surface:hover { background-color: var(--color-surface-2); }
+.hover\:bg-surface-light:hover { background-color: var(--color-surface); }
+.hover\:text-brand-primary:hover { color: var(--color-primary); }
+.hover\:text-inverse:hover { color: var(--color-foreground-inverse); }
+
+.text-inverse { color: var(--color-foreground-inverse); }
+.bg-inverse { background-color: var(--color-surface-inverse); }
+
+.border-token { border-color: var(--color-border); }
+.border-brand-primary { border-color: var(--color-primary); }
+.border-brand-secondary { border-color: var(--color-accent); }
+.border-inverse-soft { border-color: color-mix(in srgb, var(--color-foreground-inverse) 20%, transparent); }
+
+/* Gradient helpers */
+.bg-gradient-page {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-primary-soft),
+    var(--color-background)
+  );
+}
+.bg-gradient-brand-soft {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-primary-soft),
+    var(--color-accent-soft)
+  );
+}

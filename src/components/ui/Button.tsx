@@ -20,9 +20,9 @@ const Button: React.FC<ButtonProps> = ({
   const baseClasses = 'font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center';
   
   const variants = {
-    primary: 'bg-brand-primary text-white hover:bg-brand-primary-hover shadow-lg hover:shadow-xl',
-    secondary: 'bg-brand-secondary text-white hover:bg-brand-secondary-hover shadow-lg hover:shadow-xl',
-    outline: 'border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white'
+    primary: 'bg-brand-primary text-brand-primary-foreground hover:bg-brand-primary-hover shadow-lg hover:shadow-xl',
+    secondary: 'bg-brand-secondary text-brand-secondary-foreground hover:bg-brand-secondary-hover shadow-lg hover:shadow-xl',
+    outline: 'border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-brand-primary-foreground'
   };
   
   const sizeClasses = {

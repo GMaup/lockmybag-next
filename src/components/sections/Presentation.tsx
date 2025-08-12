@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Presentation = () => {
   return (
-    <section id="presentation" className="scroll-mt-28 pt-20 pb-16 bg-gradient-to-br from-surface-primary to-white">
+    <section id="presentation" className="scroll-mt-28 pt-20 pb-16 bg-gradient-page">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left">

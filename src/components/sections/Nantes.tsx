@@ -2,7 +2,7 @@ import Button from '../ui/Button';
 
 const Nantes = () => {
   return (
-    <section id="nantes" className="scroll-mt-28 py-16 bg-white">
+    <section id="nantes" className="scroll-mt-28 py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
@@ -30,7 +30,7 @@ const Nantes = () => {
                 parfait pour les voyageurs en transit ou pour explorer la ville les mains libres.
               </p>
               
-              <div className="bg-white rounded-lg p-6 shadow-md border">
+              <div className="bg-background rounded-lg p-6 shadow-md border border-token">
                 <h3 className="font-bold text-xl mb-4 text-primary">Informations pratiques</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
