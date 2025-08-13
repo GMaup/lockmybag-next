@@ -33,7 +33,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="scroll-mt-28 py-16 bg-background">
+    <section id="pricing" className="scroll-mt-28 py-16 bg-surface-light">
       <div className="container mx-auto px-4">
 
       <div className="text-center mb-12">
@@ -62,7 +62,7 @@ const Pricing = () => {
                   <h3 className="heading-style-h3 text-2xl font-bold mb-1">{item.title}</h3>
                   <div className="text-secondary">{item.desc}</div>
                 </div>
-                <div className="price-tag mt-4 text-brand-primary font-semibold">
+                <div className="price-tag mt-4 text-brand-primary-hover font-semibold">
                   {item.priceHour}<br />{item.priceDay}
                 </div>
               </div>

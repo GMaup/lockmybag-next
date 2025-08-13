@@ -1,7 +1,7 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Presentation from '@/components/sections/Presentation';
-import Services from '@/components/sections/Services';
+// import Services from '@/components/sections/Services';
 import Pricing from '@/components/sections/Pricing';
 import Rouen from '@/components/sections/Rouen';
 import Nantes from '@/components/sections/Nantes';
@@ -15,12 +15,12 @@ export default function Home() {
       <Header />
       <main className="pt-16">
         <Presentation />
-        <Services />
+        <HowItWorks />
         <Pricing />
         <Rouen />
         <Nantes />
-        <HowItWorks />
         <FAQ />
+        {/* <Services /> */}
         <AboutUs />
       </main>
       <Footer />

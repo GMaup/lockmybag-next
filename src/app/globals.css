@@ -9,48 +9,48 @@
   /* Neutral text and borders */
   --color-secondary: #475467; /* secondary text */
   --color-muted: #667085;     /* muted text */
-  --color-border: #E7ECF2;
+  --color-border: #EADFD2;
 
-  /* Brand: Primary (modern teal) */
-  --color-primary: #14B8A6;
-  --color-primary-hover: #0D9488;
-  --color-primary-foreground: #ffffff;
-  --color-primary-soft: #F0FDFA;
+  /* Brand: Primary (vivid yellow) */
+  --color-primary: #F2C34E;
+  --color-primary-hover: #E3AF35;
+  --color-primary-foreground: #0B0A07;
+  --color-primary-soft: #FFF8E6;
 
-  /* Brand: Accent (saffron) */
-  --color-accent: #FDB022;
-  --color-accent-hover: #F59E0B;
-  --color-accent-foreground: #0B0A07;
-  --color-accent-soft: #FFFAEB;
+  /* Brand: Accent (coral pink) */
+  --color-accent: #E24A74;
+  --color-accent-hover: #C83F67;
+  --color-accent-foreground: #ffffff;
+  --color-accent-soft: #FFE9F0;
 
   /* Surfaces */
-  --color-surface: #F8FAFC;      /* light surface */
-  --color-surface-2: #EEF2F7;    /* hover/raised */
+  --color-surface: #FFFDF9;      /* light surface */
+  --color-surface-2: #FFF7ED;    /* hover/raised */
   --color-surface-inverse: #0F172A; /* dark surface (footer, etc.) */
-  --color-foreground-inverse: #F8FAFC;
+  --color-foreground-inverse: #FDFDFD;
 
   /* Status */
-  --color-warning: #F59E0B;
+  --color-warning: #ED8A3B;
 }
 
 /* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: #070A0D;
-    --color-foreground: #E7ECF2;
+    --color-background: #0F0D09;
+    --color-foreground: #EAE7E3;
 
-    --color-secondary: #CBD5E1;
-    --color-muted: #94A3B8;
-    --color-border: #1A2435;
+    --color-secondary: #D6D3D1;
+    --color-muted: #A8A29E;
+    --color-border: #2B221C;
 
-    --color-surface: #0E1F24;
-    --color-surface-2: #10242B;
-    --color-surface-inverse: #F5FAF9;
-    --color-foreground-inverse: #070A0D;
+    --color-surface: #1A1410;
+    --color-surface-2: #221A14;
+    --color-surface-inverse: #FFFDF9;
+    --color-foreground-inverse: #0F0D09;
 
     /* soften brand surfaces for dark */
-    --color-primary-soft: #062A28;
-    --color-accent-soft: #241A06;
+    --color-primary-soft: #2A2208;
+    --color-accent-soft: #2A0E17;
   }
 }
 
@@ -64,6 +64,7 @@ body {
 .text-secondary { color: var(--color-secondary); }
 .text-muted { color: var(--color-muted); }
 .text-brand-primary { color: var(--color-primary); }
+.text-brand-primary-hover { color: var(--color-primary-hover); }
 .text-brand-secondary { color: var(--color-accent); }
 .text-brand-primary-foreground { color: var(--color-primary-foreground); }
 .text-brand-secondary-foreground { color: var(--color-accent-foreground); }
@@ -106,4 +107,9 @@ body {
     var(--color-primary-soft),
     var(--color-accent-soft)
   );
+}
+
+/* Brand font utility (from next/font variable) */
+.font-brand {
+  font-family: var(--font-brand), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }

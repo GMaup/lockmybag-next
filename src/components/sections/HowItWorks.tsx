@@ -27,7 +27,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section id="howitworks" className="scroll-mt-28 py-16 bg-surface-light">
+    <section id="howitworks" className="scroll-mt-28 py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -62,7 +62,7 @@ const HowItWorks = () => {
                 <h3 className="text-xl font-bold mb-2 text-primary">
                   Étape {step.number}
                 </h3>
-                <h4 className="text-lg font-semibold mb-2 text-brand-primary">
+                <h4 className="text-lg font-semibold mb-2 text-brand-primary-hover">
                   {step.title}
                 </h4>
                 <p className="text-secondary">
