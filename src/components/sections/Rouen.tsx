@@ -61,14 +61,14 @@ const Rouen = () => {
                 </ul>
               </div>
               
-              <Button variant="primary" size="large" className="mt-6">
+              <Button variant="peps1" size="large" className="mt-6">
                 Réserver à Rouen
               </Button>
             </div>
           </div>
           
           <div className="relative">
-            <div className="bg-surface-primary rounded-2xl p-4">
+            <div className="bg-surface-primary rounded-2xl p-4 border border-peps1-soft">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.3674837266!2d1.0909!3d49.4432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDI2JzM1LjUiTiAxwrAwNSczMi44IkU!5e0!3m2!1sfr!2sfr!4v1234567890"
                 width="100%"

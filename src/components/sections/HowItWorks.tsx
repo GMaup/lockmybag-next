@@ -56,13 +56,13 @@ const HowItWorks = () => {
               )}
               
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-brand-primary text-brand-primary-foreground rounded-full text-3xl font-bold mb-4">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-brand-secondary text-brand-secondary-foreground rounded-full text-3xl font-bold mb-4 transition ring-2 ring-[var(--color-accent-soft)] hover:ring-[var(--color-accent)]">
                   <span className="text-4xl">{step.icon}</span>
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-primary">
                   Étape {step.number}
                 </h3>
-                <h4 className="text-lg font-semibold mb-2 text-brand-primary-hover">
+                <h4 className="text-lg font-semibold mb-2 text-peps2">
                   {step.title}
                 </h4>
                 <p className="text-secondary">

@@ -11,26 +11,42 @@
   --color-muted: #667085;     /* muted text */
   --color-border: #EADFD2;
 
-  /* Brand: Primary (vivid yellow) */
-  --color-primary: #F2C34E;
-  --color-primary-hover: #E3AF35;
-  --color-primary-foreground: #0B0A07;
-  --color-primary-soft: #FFF8E6;
+  /* Brand: Primary (deep blue) */
+  --color-primary: #1E294F; /* deep blue */
+  --color-primary-hover: #192341;
+  --color-primary-foreground: #FFFFFF;
+  --color-primary-soft: #E8ECF7;
 
-  /* Brand: Accent (coral pink) */
-  --color-accent: #E24A74;
-  --color-accent-hover: #C83F67;
-  --color-accent-foreground: #ffffff;
-  --color-accent-soft: #FFE9F0;
+  /* Brand: Secondary (yellow accent) */
+  --color-accent: #FDCA0D; /* yellow */
+  --color-accent-hover: #E6B700;
+  --color-accent-foreground: #1E294F; /* deep blue text on yellow */
+  --color-accent-soft: #FFF4C6;
 
   /* Surfaces */
-  --color-surface: #FFFDF9;      /* light surface */
-  --color-surface-2: #FFF7ED;    /* hover/raised */
-  --color-surface-inverse: #0F172A; /* dark surface (footer, etc.) */
-  --color-foreground-inverse: #FDFDFD;
+  --color-surface: #F5F7FB;         /* light blue-grey surface */
+  --color-surface-2: #EEF2FA;       /* hover/raised */
+  --color-surface-inverse: #1E294F; /* footer background */
+  --color-foreground-inverse: #FFFFFF;
 
   /* Status */
   --color-warning: #ED8A3B;
+  
+  /* Peps Colors */
+  --color-peps1: #ED2F70;
+  --color-peps1-hover: #D11F5F;
+  --color-peps1-soft: #FFE1EC;
+  --color-peps1-foreground: #FFFFFF;
+  
+  --color-peps2: #FF8205;
+  --color-peps2-hover: #E57200;
+  --color-peps2-soft: #FFE6CC;
+  --color-peps2-foreground: #0B0A07;
+  
+  --color-peps3: #35C1F5;
+  --color-peps3-hover: #1BAAEB;
+  --color-peps3-soft: #E6F7FF;
+  --color-peps3-foreground: #0B0A07;
 }
 
 /* Dark mode overrides */
@@ -60,7 +76,7 @@ body {
 }
 
 /* Semantic utilities bound to tokens */
-.text-primary { color: var(--color-foreground); }
+.text-primary { color: var(--color-primary); }
 .text-secondary { color: var(--color-secondary); }
 .text-muted { color: var(--color-muted); }
 .text-brand-primary { color: var(--color-primary); }
@@ -87,12 +103,41 @@ body {
 
 .text-inverse { color: var(--color-foreground-inverse); }
 .bg-inverse { background-color: var(--color-surface-inverse); }
+/* Slightly muted text on inverse backgrounds for better hierarchy */
+.text-inverse-muted { color: color-mix(in srgb, var(--color-foreground-inverse) 75%, transparent); }
 
 .border-token { border-color: var(--color-border); }
 .border-brand-primary { border-color: var(--color-primary); }
 .border-brand-secondary { border-color: var(--color-accent); }
 .hover\:border-brand-primary-hover:hover { border-color: var(--color-primary-hover); }
 .border-inverse-soft { border-color: color-mix(in srgb, var(--color-foreground-inverse) 20%, transparent); }
+
+/* Peps borders */
+.border-peps1 { border-color: var(--color-peps1); }
+.border-peps1-soft { border-color: var(--color-peps1-soft); }
+.border-peps2 { border-color: var(--color-peps2); }
+.border-peps2-soft { border-color: var(--color-peps2-soft); }
+.border-peps3 { border-color: var(--color-peps3); }
+.border-peps3-soft { border-color: var(--color-peps3-soft); }
+
+/* Peps utilities */
+.bg-peps1 { background-color: var(--color-peps1); }
+.hover\:bg-peps1-hover:hover { background-color: var(--color-peps1-hover); }
+.bg-peps1-soft { background-color: var(--color-peps1-soft); }
+.text-peps1 { color: var(--color-peps1); }
+.text-peps1-foreground { color: var(--color-peps1-foreground); }
+
+.bg-peps2 { background-color: var(--color-peps2); }
+.hover\:bg-peps2-hover:hover { background-color: var(--color-peps2-hover); }
+.bg-peps2-soft { background-color: var(--color-peps2-soft); }
+.text-peps2 { color: var(--color-peps2); }
+.text-peps2-foreground { color: var(--color-peps2-foreground); }
+
+.bg-peps3 { background-color: var(--color-peps3); }
+.hover\:bg-peps3-hover:hover { background-color: var(--color-peps3-hover); }
+.bg-peps3-soft { background-color: var(--color-peps3-soft); }
+.text-peps3 { color: var(--color-peps3); }
+.text-peps3-foreground { color: var(--color-peps3-foreground); }
 
 /* Gradient helpers */
 .bg-gradient-page {

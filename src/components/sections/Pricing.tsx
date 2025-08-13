@@ -62,7 +62,7 @@ const Pricing = () => {
                   <h3 className="heading-style-h3 text-2xl font-bold mb-1">{item.title}</h3>
                   <div className="text-secondary">{item.desc}</div>
                 </div>
-                <div className="price-tag mt-4 text-brand-primary-hover font-semibold">
+                <div className="price-tag mt-4 text-peps2 font-semibold">
                   {item.priceHour}<br />{item.priceDay}
                 </div>
               </div>
