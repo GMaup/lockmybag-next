@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
   const variants = {
     primary: 'bg-brand-primary text-brand-primary-foreground hover:bg-brand-primary-hover shadow-lg hover:shadow-xl',
     secondary: 'bg-brand-secondary text-brand-secondary-foreground hover:bg-brand-secondary-hover shadow-lg hover:shadow-xl',
-    outline: 'border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-brand-primary-foreground'
+    outline: 'border-2 border-brand-primary text-brand-primary hover:bg-surface hover:border-brand-primary-hover'
   };
   
   const sizeClasses = {

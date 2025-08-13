@@ -91,6 +91,7 @@ body {
 .border-token { border-color: var(--color-border); }
 .border-brand-primary { border-color: var(--color-primary); }
 .border-brand-secondary { border-color: var(--color-accent); }
+.hover\:border-brand-primary-hover:hover { border-color: var(--color-primary-hover); }
 .border-inverse-soft { border-color: color-mix(in srgb, var(--color-foreground-inverse) 20%, transparent); }
 
 /* Gradient helpers */
