@@ -33,31 +33,31 @@ const Nantes = () => {
               <div className="bg-background rounded-lg p-6 shadow-md border border-token">
                 <h3 className="font-bold text-xl mb-4 text-primary">Informations pratiques</h3>
                 <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-brand-secondary mr-2">📍</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand-secondary w-6 flex-shrink-0 inline-flex justify-center mt-0.5">📍</span>
                     <div>
                       <strong>Adresse :</strong><br />
                       5 Boulevard de Stalingrad<br />
                       44000 Nantes
                     </div>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-brand-secondary mr-2">🚊</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand-secondary w-6 flex-shrink-0 inline-flex justify-center mt-0.5">🚊</span>
                     <div>
                       <strong>Transports :</strong><br />
                       Tramway : Ligne 1 - Gare SNCF (1 min)<br />
                       Bus : C2, C3, 12, 26
                     </div>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-brand-secondary mr-2">🕐</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand-secondary w-6 flex-shrink-0 inline-flex justify-center mt-0.5">🕐</span>
                     <div>
                       <strong>Horaires :</strong><br />
                       Lundi - Dimanche : 8h00 - 22h00
                     </div>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-brand-secondary mr-2">📞</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-brand-secondary w-6 flex-shrink-0 inline-flex justify-center mt-0.5">📞</span>
                     <div>
                       <strong>Contact local :</strong><br />
                       06 XX XX XX XX

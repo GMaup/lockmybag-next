@@ -71,21 +71,21 @@ const AboutUs = () => {
                 <div className="pt-4">
                   <h4 className="font-semibold text-lg mb-3 text-primary">Nos Valeurs</h4>
                   <ul className="space-y-2">
-                    <li className="flex items-center">
-                      <span className="text-brand-secondary mr-2">✓</span>
-                      <strong>Sécurité</strong> : Vos biens sont notre priorité
+                    <li className="flex items-start gap-3">
+                      <span className="text-brand-secondary w-5 flex-shrink-0 inline-flex justify-center mt-0.5">✓</span>
+                      <div><strong>Sécurité</strong> : Vos biens sont notre priorité</div>
                     </li>
-                    <li className="flex items-center">
-                      <span className="text-brand-secondary mr-2">✓</span>
-                      <strong>Simplicité</strong> : Un service facile et rapide
+                    <li className="flex items-start gap-3">
+                      <span className="text-brand-secondary w-5 flex-shrink-0 inline-flex justify-center mt-0.5">✓</span>
+                      <div><strong>Simplicité</strong> : Un service facile et rapide</div>
                     </li>
-                    <li className="flex items-center">
-                      <span className="text-brand-secondary mr-2">✓</span>
-                      <strong>Flexibilité</strong> : Des horaires adaptés à vos besoins
+                    <li className="flex items-start gap-3">
+                      <span className="text-brand-secondary w-5 flex-shrink-0 inline-flex justify-center mt-0.5">✓</span>
+                      <div><strong>Flexibilité</strong> : Des horaires adaptés à vos besoins</div>
                     </li>
-                    <li className="flex items-center">
-                      <span className="text-brand-secondary mr-2">✓</span>
-                      <strong>Confiance</strong> : Une équipe à votre écoute
+                    <li className="flex items-start gap-3">
+                      <span className="text-brand-secondary w-5 flex-shrink-0 inline-flex justify-center mt-0.5">✓</span>
+                      <div><strong>Confiance</strong> : Une équipe à votre écoute</div>
                     </li>
                   </ul>
                 </div>
